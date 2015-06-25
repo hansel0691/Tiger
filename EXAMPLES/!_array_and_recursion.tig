@@ -1,0 +1,18 @@
+let
+	type arrayInt = array of int
+	
+	var arr := arrayInt[10] of 0
+	
+	function recursive(A: arrayInt, curr: int) = 
+		if curr = 10 then
+			()
+		else (
+			A[curr] := curr;
+			recursive(A, curr + 1)
+		)
+	
+in
+	recursive(arr, 1);
+	for i := 0 to 9 do
+		printiline(arr[i])
+end

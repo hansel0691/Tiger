@@ -1,0 +1,10 @@
+let
+    type t1 = array of int
+    type t2 = array of string
+    var a := t1[10] of 1
+    var b := t2[10] of "ramon"
+    
+    function boo(a : string, a : int) = print(a)
+in
+    boo("hola")
+end

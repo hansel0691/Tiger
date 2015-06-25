@@ -1,0 +1,8 @@
+let
+    type human = { age: int, height: int, name: string }
+    type humanarray = array of human
+    var humanarray1 := humanarray[6] of nil
+in
+    humanarray1[2] := human{age = "5 years", height = "1.70 cm", name = nil};
+    humanarray1[5] := human{age = 5, height = nil, name = "pepe"}
+end

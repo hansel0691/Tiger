@@ -1,0 +1,7 @@
+let
+	function g (a:int , b:string):int = a
+in
+	g(1, nil);
+	g(nil, "one");
+	g("one", 1)
+end

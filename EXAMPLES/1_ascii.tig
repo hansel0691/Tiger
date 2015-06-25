@@ -1,0 +1,14 @@
+/*Este programa imprime todos los caracteres ASCII en formato  # - caracter*/
+
+let
+	function f(a:int) = (
+		if a <> 32 then  
+			f(a-1);
+		printi(a);
+		print(concat(" ... ", chr(a)));
+		print("\n")
+	)
+in
+	print("ASCII \n");
+	f(127)
+end

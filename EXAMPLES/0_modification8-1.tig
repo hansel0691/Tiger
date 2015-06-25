@@ -1,0 +1,9 @@
+/* Este programa no es válido. El compilador debe reportar que la expresión 
+que se intenta asignar a x en la línea A no retorna valor. */ 
+
+let 
+	var x : int := 4 
+in 
+	while x > 0 do 
+		x := (10 ; break ; x - 1)     /* línea A */ 
+end

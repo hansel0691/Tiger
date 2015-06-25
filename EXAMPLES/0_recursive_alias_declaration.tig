@@ -1,0 +1,12 @@
+let
+	type a = b
+	type b = c
+	type c = a
+	type d = array of b
+in
+end
+
+/*
+  Semantic error: Recursive devlaration of type 'c'
+  Semantic error: Recursive devlaration of type 'd'
+*/

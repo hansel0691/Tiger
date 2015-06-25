@@ -1,0 +1,9 @@
+/*Error: ArrayCreation con tipo de InitialValue != tipo declarado*/
+
+let
+	type arrayty = array of int
+
+	var a := arrayty [10] of " "
+in
+	0
+end

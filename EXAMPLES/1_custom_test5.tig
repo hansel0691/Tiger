@@ -1,0 +1,10 @@
+let
+	type T = { field : int } 
+	var f : string := "string"
+	type T = { field : string }
+	var a : string := nil
+	function f(x : int) : T = x + 1
+	var T : T := 33
+in 
+	/* ... */
+end

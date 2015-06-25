@@ -1,0 +1,12 @@
+/*Este programa imprime 52*/
+let
+	type R = { x : A }
+	type A = B
+	type B = int
+	type arrtype = array of R
+	var a:= arrtype[2] of R{x = 5}
+in
+	a[1].x := 2;
+	printi(a[0].x);
+	printi(a[1].x)
+end

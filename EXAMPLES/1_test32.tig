@@ -1,0 +1,26 @@
+﻿let
+	type a = w
+	type d = f
+	type b = c
+	type c = int
+	type f = a
+	type w = { p1:a , p2:b , p3:c , p4:f , p5 : w }
+	type q = { p1 : w }
+	var x := w{p1 = nil,p2 =2, p3 = 3, p4 = nil, p5 = nil}
+	var y := q{p1 = x}
+	var z := q{p1 = nil}
+in
+	let
+		type a = w
+		type d = f
+		type b = c
+		type c = string
+		type f = a
+		type w = { p1:a , p2:b , p3:c , p4:f , p5 : w }
+		type q = { p1 : w }
+		var x := w{p1 = nil,p2 =nil, p3 = "pepe", p4 = nil, p5 = nil}
+		var y := q{p1 = x}
+		var z := q{p1 = nil}	
+	in
+	end
+end

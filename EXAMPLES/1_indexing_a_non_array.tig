@@ -1,0 +1,7 @@
+/*Error: ArrayElement con tipo de LValue que no es un ArrayType*/
+let 
+	var d:=0
+in
+	d[3]
+end
+

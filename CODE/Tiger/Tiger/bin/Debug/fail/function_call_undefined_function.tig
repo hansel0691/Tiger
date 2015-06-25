@@ -1,0 +1,5 @@
+undefined_function(1)
+
+/*
+Semantic Error: Calling an undefined function undefined_function at line 1.
+*/

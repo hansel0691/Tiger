@@ -1,0 +1,8 @@
+let
+	type intArray = array of int
+	type intArrayAlias = intArray
+	var b : intArray := nil
+	var c : intArrayAlias := nil
+in
+	c = b+2
+end

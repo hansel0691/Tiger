@@ -1,0 +1,7 @@
+/*Error: RecordElement con tipo de LValue que no es un RecordType*/
+let 
+	var d:=0
+in
+	d.f 
+end
+

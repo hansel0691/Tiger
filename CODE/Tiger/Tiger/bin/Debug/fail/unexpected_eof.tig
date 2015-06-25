@@ -1,0 +1,7 @@
+
+/* Syntactic Error: Unexpected end of the input file. */
+
+let
+    var n := 0
+in
+    print("\n");

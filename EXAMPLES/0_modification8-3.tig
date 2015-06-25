@@ -1,0 +1,14 @@
+/* A pesar de que el cuerpo de la expresión if-then nunca se ejecutará 
+(porque su condición siempre evaluará a 0), Ud. puede considerar que este 
+programa no es válido. El compilador reportará que la expresión que se 
+intenta asignar a x en la línea A no retorna valor [creyendo que la condición 
+de la expresión if-then puede potencialmente tomar valor 1 (aunque sabemos 
+que esto no ocurrirá y que podría haberse detectado en tiempo de compilación) 
+y hacer que se produzca un break cuando se ejecute el cuerpo de la misma]. */ 
+
+let 
+	var x : int := 4 
+in 
+	while x > 0 do 
+		x := (10 ; if 1 - 1 then break ; x - 1)     /* línea A */ 
+end

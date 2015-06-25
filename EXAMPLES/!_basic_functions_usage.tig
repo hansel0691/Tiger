@@ -1,0 +1,17 @@
+let
+	type Person = {Name:string, Age:int}
+	function hello_person(one:Person) = 
+		(
+			one.Name := "10";
+			one := Person{Name = "eduardo", Age = 22}
+		)
+	var rene := Person{Name = "rene", Age = 23}
+in
+	hello_person(rene);
+	printline(rene.Name);
+	rene.Name := "adriano";
+	printline(rene.Name);
+	rene := Person{Name = "eduardo", Age = 22};
+	print(concat(concat("Name: ", rene.Name), "; Age: "));
+	printiline(rene.Age)
+end

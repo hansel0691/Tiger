@@ -1,0 +1,7 @@
+let 
+	type a = b
+	type b = a
+	type c = {f:a}
+	var x := c{f = 1}
+in
+end

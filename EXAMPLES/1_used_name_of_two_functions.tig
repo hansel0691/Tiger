@@ -1,0 +1,8 @@
+/*Error: Declaración de 2 funciones con el mismo nombre*/
+let
+	function g(a:int):int = 3
+	type t = int
+	function g(a:int):int = a
+in
+	printi(g(6))
+end

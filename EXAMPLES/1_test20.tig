@@ -1,0 +1,12 @@
+﻿let
+	function pepe():int = 3
+	function juan():string = "juan"
+in
+	let
+		var pepe := "pepe"
+		var juan := 3
+		function print():int = 3
+	in
+	
+	end
+end

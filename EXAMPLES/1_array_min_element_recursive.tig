@@ -1,0 +1,28 @@
+/*Este programa imprime -9*/
+
+let
+	type arrayInt = array of int
+	
+	function Minimo(numeros:arrayInt,long:int):int = 
+		if long <= 0 then 
+			-1 
+	    else 
+			MinimoR(numeros[0],0,numeros,long)
+			
+	function MinimoR(min:int,index:int, numeros:arrayInt, long:int):int = 
+		if index >= long then 
+			min 
+		else if min > numeros[index] then 
+			MinimoR(numeros[index],index+1,numeros,long)
+		else 
+			MinimoR(min,index+1,numeros,long)
+	
+	var l := 4
+	var n := arrayInt[l] of 0
+in
+	n[0]:=2;
+	n[1]:=-9;
+	n[2]:=4;
+	n[3]:=3;
+	printi(Minimo(n,l))
+end

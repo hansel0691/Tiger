@@ -1,0 +1,24 @@
+/*Este programa imprime 0*/
+
+let
+	type arrayInt = array of int
+	type intArray = {a:arrayInt,long:int}
+	
+	function HayMasPositivosR(index : int, pos : int, neg : int, numeros : intArray) : int =
+		if index >= numeros.long then 
+			pos > neg
+		else if numeros.a[index] > 0 then 
+			HayMasPositivosR(index+1, pos+1, neg, numeros)
+		else 
+			HayMasPositivosR(index+1,pos,neg+1,numeros)
+			
+	function HayMasPositivos(numeros : intArray) : int =
+		HayMasPositivosR(0,0,0,numeros)
+		
+	var x := intArray{a=arrayInt[3] of 0, long=3}
+in
+	x.a[0]:=2;
+	x.a[1]:=-1;
+	x.a[2]:=-2;
+	printi(HayMasPositivos(x))
+end

@@ -1,0 +1,28 @@
+let
+	type tree = {value:int, next:tree, prev:tree}
+	
+	var list := tree{value = 0, next = nil, prev = nil}
+	var current := list
+	var next : tree := nil
+in
+	for i := 1 to 5 do
+		(
+		next := tree{value = i, next = nil, prev = current};
+		current.next := next;
+		current := next
+		);
+	current := list;
+	printline("Forward iteration:");
+	while current <> nil do
+	(
+		printiline(current.value);
+		next := current;
+		current := current.next
+	);
+	current := next;
+	printline("Backward iteration:");
+	while (current <> nil) do (
+		printiline(current.value);
+		current := current.prev
+	)
+end

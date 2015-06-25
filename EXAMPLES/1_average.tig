@@ -1,0 +1,23 @@
+/*Este programa imprime 5*/
+
+let
+	type arrayInt = {a:intArray,length:int}
+	type intArray = array of int
+	
+	function Promedio(numeros:arrayInt):int = 
+		PromedioR(0,0,numeros)
+	
+	function PromedioR(suma:int,index:int,numeros:arrayInt):int = 
+		if index >= numeros.length then  
+			suma/numeros.length 
+		else
+			PromedioR(suma+numeros.a[index],index+1,numeros)
+			
+	var x := intArray[4] of 2
+in
+	x[0] := 1;
+	x[1] := 5;
+	x[2] := 6;
+	x[3] := 9;
+	printi(Promedio(arrayInt{a=x, length=4}))
+end

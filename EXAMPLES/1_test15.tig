@@ -1,0 +1,9 @@
+﻿let
+	type a = b
+	type b = a
+	type c = {p1 : a,p2 : b}
+	var pepe := c { p1 = 2, p2 = 3 }
+	function pepe1(p1 : a, p2 : b):c = nil
+in
+	pepe1(2,3)
+end

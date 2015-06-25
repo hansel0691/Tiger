@@ -1,0 +1,7 @@
+/* Este programa no es válido. En la inicialización de los records de tipo 
+Person, el campo Name debe inicializarse primero que el campo Age. */ 
+
+let 
+	type Person = { Name : string, Age : int } 
+	var john : Person := Person { Age = 22, Name = "John" } 
+in /* ... */ end

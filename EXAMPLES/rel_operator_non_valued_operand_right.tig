@@ -1,0 +1,21 @@
+
+(
+	if 1 >= () then ();
+	if 1 > () then ();
+	if 1 <= () then ();
+	if 1 < () then ()
+)
+
+/*
+Semantic Error: Invalid use of binary relational operator with a non-valued right expression at line 3.
+Semantic Error: Types of left and right operands of the binary relational operator at line 3 does not match.
+
+Semantic Error: Invalid use of binary relational operator with a non-valued right expression at line 4.
+Semantic Error: Types of left and right operands of the binary relational operator at line 4 does not match.
+
+Semantic Error: Invalid use of binary relational operator with a non-valued right expression at line 5.
+Semantic Error: Types of left and right operands of the binary relational operator at line 5 does not match.
+
+Semantic Error: Invalid use of binary relational operator with a non-valued right expression at line 6.
+Semantic Error: Types of left and right operands of the binary relational operator at line 6 does not match.
+*/

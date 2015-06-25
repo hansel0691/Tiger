@@ -1,0 +1,21 @@
+
+(	
+	if 1 >= nil then ();
+	if 1 > nil then ();
+	if 1 <= nil then ();
+	if 1 < nil then ()
+)
+
+/*
+Semantic Error: Invalid type of right operand in the binary relational operator at line 3.
+Semantic Error: Types of left and right operands of the binary relational operator at line 3 do not match.
+
+Semantic Error: Invalid type of right operand in the binary relational operator at line 4.
+Semantic Error: Types of left and right operands of the binary relational operator at line 4 do not match.
+
+Semantic Error: Invalid type of right operand in the binary relational operator at line 5.
+Semantic Error: Types of left and right operands of the binary relational operator at line 5 do not match.
+
+Semantic Error: Invalid type of right operand in the binary relational operator at line 6.
+Semantic Error: Types of left and right operands of the binary relational operator at line 6 do not match.
+*/

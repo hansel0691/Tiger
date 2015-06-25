@@ -1,0 +1,5 @@
+if () = 1 then ()
+
+/*
+Semantic Error: Invalid use of equality or inequality logical operator with a non-valued left expression at line 1.
+*/

@@ -1,0 +1,11 @@
+let
+	type arrayty = array of int
+
+	var a := arrayty [10] of " "
+in
+	0
+end
+
+/*
+Semantic Error: Incompatible type for the array value at line 4.
+*/

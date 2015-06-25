@@ -1,0 +1,5 @@
+let
+type rec = {name : string }
+function f (p : rec) = f(nil)
+in 
+end

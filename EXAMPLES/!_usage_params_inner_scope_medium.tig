@@ -1,0 +1,20 @@
+let
+	function a(b:int) = 
+		(let
+			function c(d:int):int =
+				b
+		in
+			printiline(c(5))
+		end;
+		b := b - 1;
+		let
+			var c := b
+		in
+			printiline(c)
+		end;
+		if (b > 0) then
+			a(b)
+		)
+in
+	a(3)
+end

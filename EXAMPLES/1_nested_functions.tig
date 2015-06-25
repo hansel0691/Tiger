@@ -1,0 +1,28 @@
+/*Este programa imprime 43210*/
+
+let
+	function es_par(a : int) : int = 
+		(a + 1)/2*2 = a
+	
+	function f(n : int) = 
+		let
+			var a := n
+		in
+			let
+				function g(n : int) = 
+					a := n - 1
+			in
+				printi(a);
+				if a > 0 then(
+					if es_par(a) then 
+						f(a - 1)
+					else ( 
+						g(a); 
+						f(a) 
+					)
+				)
+			end
+		end
+in
+	f(4)
+end

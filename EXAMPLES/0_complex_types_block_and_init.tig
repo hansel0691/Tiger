@@ -1,0 +1,21 @@
+let
+	type a = b
+	type b = c
+	type c = {x:d}
+	type d = array of b
+	type e = d
+	type f = e
+	type g = f
+	type h = a
+	
+	var c := a {
+		x = d[5] of b {
+			x = e[5] of c {
+				x = f[5] of h {
+				 	x = g[5] of nil
+				}
+			}
+		}
+	}
+in
+end

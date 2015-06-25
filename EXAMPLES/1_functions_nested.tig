@@ -1,0 +1,22 @@
+/*Este programa imprime 10000 diez veces, y luego imprime 100*/
+
+let
+	var k:= 10
+	
+	function f(n : int) =
+		let
+			var i:= 100
+			var j:= 1000
+
+			function g(m : int) =
+				for i:= 1 to m do (
+					printi(j * n);
+					print("\n")
+				)
+		in
+			g(n); 
+			printi(i)
+		end
+in
+	f(k)
+end

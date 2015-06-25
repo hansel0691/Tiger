@@ -1,0 +1,6 @@
+﻿let
+	
+in
+	for i := 1 to 3 do
+		printline("this should be printed 3 times")
+end

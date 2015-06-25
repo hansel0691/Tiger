@@ -1,0 +1,26 @@
+/*Este programa imprime un array de 4 records. 
+	Modifica 2 de ellos y los vuelve a imprimir*/
+
+let
+	type R = { x : int, s : string }
+	type A = array of R
+	var size_ := 4
+	var a := A[size_] of R{ x = 10, s = "hola" }
+in
+	for j:= 0 to size_ - 1 do
+	(
+		printi(a[j].x);
+		print("  ");
+		print(a[j].s);
+		print("\n")
+	);
+	printline("---------");
+	a[2].x := 88; a[3].s:= "hello!!";
+	for j:= 0 to size_ - 1 do
+	(
+		printi(a[j].x);
+		print("  ");
+		print(a[j].s);
+		print("\n")
+	)
+end

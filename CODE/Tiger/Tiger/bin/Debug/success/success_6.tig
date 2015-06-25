@@ -1,0 +1,7 @@
+let /* Working on some tests */
+	var N := 20
+	type person = {nombre:string, edad:int}
+	type people = array of person
+in 
+	try(0) 
+end

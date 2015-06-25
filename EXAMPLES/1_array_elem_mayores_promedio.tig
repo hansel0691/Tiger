@@ -1,0 +1,38 @@
+/*Este programa imprime 2*/
+
+let
+
+	type arrayInt = array of int
+	type intArray = {a:arrayInt,long:int}
+
+	function MayoresPromedio(numeros:intArray):int=
+		if numeros.long <= 0 then 
+			0
+		else 
+			let
+				function Promedio(n:intArray):int = 
+					let 
+						var suma := 0
+					in 
+						for i:= 0 to n.long-1 do 
+							suma := suma + n.a[i];
+						suma/n.long
+					end
+				
+				var promedio := Promedio(numeros)
+				var cant :=0
+			in
+				for i := 0 to numeros.long -1 do 
+					if numeros.a[i] > promedio then 
+						cant:=cant+1;
+				cant
+			end
+
+	var x:= arrayInt[4] of 0
+in
+	x[0]:=1;
+	x[1]:=5;
+	x[2]:=6;
+	x[3]:=8;
+	printi(MayoresPromedio(intArray{a=x,long=4}))
+end

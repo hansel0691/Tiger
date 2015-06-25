@@ -1,0 +1,12 @@
+let
+	type Person = {Name : string, Mom : Person}
+in
+	let
+		type intA0 = array of Person
+		type intA1 = array of intA0
+		var class := intA1[10] of intA0[10] of Person{Name = "Hansel", Mom = Person{Name = "Patricia", Mom = Person{Name = "Gloria", Mom = nil}}}
+	in
+		/*class[4][5]*/
+	end;
+	2
+end

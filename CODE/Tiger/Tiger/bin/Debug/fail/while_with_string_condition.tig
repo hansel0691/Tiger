@@ -1,0 +1,5 @@
+while "a" do print("a")
+
+/*
+Semantic Error: Invalid type of condition of the while statement at line 1.
+*/

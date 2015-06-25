@@ -1,0 +1,8 @@
+/* Este programa no es válido. El tipo (Person) de la expresión let-in-end, 
+que es la que define al programa, no está entre los tipos permitidos para ella. */ 
+
+let 
+	type Person = { Name : string, Age : int } 
+in 
+	Person { Name = "Jane", Age = 22 } 
+end

@@ -1,0 +1,25 @@
+/*Este programa imprime 7*/
+
+let
+	type arrayint = array of int
+	
+	function max (lista:arrayint, length:int):int = 
+		let 
+			var max := lista[0]		
+		in
+			for i := 0 to length-1 do
+				if lista[i] > max then 
+					max := lista[i];
+			max
+		end
+		
+	var param:arrayint:= arrayint[0] of -1
+in
+	param := arrayint[5] of 0;
+	param[0] := 2;
+	param[1] := 1;
+	param[2] := 2;
+	param[3] := 7;
+	param[4] := 3;
+	printi(max(param,5))
+end

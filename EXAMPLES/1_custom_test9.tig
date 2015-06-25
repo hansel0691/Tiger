@@ -1,0 +1,7 @@
+let
+	var x : int := T
+	var c : T := 8
+in
+	while x > 0 do
+		x := (10 ; if T+c < 3 then break ; x - T)  /* línea A */
+end 

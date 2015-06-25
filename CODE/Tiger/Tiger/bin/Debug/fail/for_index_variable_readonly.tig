@@ -1,0 +1,6 @@
+for i := 1 to 10 do 
+    i := 1
+
+/*
+Semantic Error: Invalid use of assignment to a readonly variable at line 2.
+*/

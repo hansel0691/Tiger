@@ -1,0 +1,8 @@
+let
+    var s := "This is a string literal that begins here...
+in
+end
+
+/*
+Syntactic Error: Illegal character '' at line 2 column 14.
+*/

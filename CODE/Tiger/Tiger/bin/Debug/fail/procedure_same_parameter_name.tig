@@ -1,0 +1,8 @@
+let
+    function f(a: int, a: string, b: int, b: string) = ()
+in
+end
+
+/*
+Semantic Error: At least two parameters 'f' defined at line 2 have the same name.
+*/

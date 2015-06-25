@@ -1,0 +1,9 @@
+﻿let
+	function f():string = "pepe"
+in
+	printline(x.p1.p1);
+	printline(x.p2.p1);
+	printline(x.p3.p1);
+	printline(x.p4.p1);
+	printline(x.p5.p5)
+end

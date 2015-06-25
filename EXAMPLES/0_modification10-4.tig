@@ -1,0 +1,11 @@
+/* Este programa es válido. La expresión let-in-end, que es la que define al 
+programa, es correcta, pues aunque es de tipo Entero, su tipo "real" es int 
+(porque Entero es un alias a int), y el tipo int está en la lista de los permisibles 
+para estas expresiones. */ 
+
+let 
+	type Entero = int 
+	var edad : Entero := 22 
+in 
+	edad 
+end

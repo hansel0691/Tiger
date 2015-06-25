@@ -1,0 +1,5 @@
+let
+type rec = {name : string }
+function f (p : rec) = f(rec{name = "hola"})
+in 
+end

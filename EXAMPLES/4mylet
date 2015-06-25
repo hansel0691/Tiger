@@ -1,0 +1,7 @@
+let
+	type r = {name : string, age : int, mom : r}
+	var r1 := r{name = "Hansel", age = 22, mom = r{name = "Patricia", age = 50, mom = nil}}
+in
+	r1.mom.name := "Otro Nombre";
+	print(r1.mom.name)
+end

@@ -1,0 +1,46 @@
+/*Este programa imprime un array, lo ordena e imprime nuevamente*/
+
+let 
+	type intArray = array of int
+	
+	function printArray(ia: intArray, n:int) = (
+		for i :=0 to n-1 do (
+			printi(ia[i]); 
+			if i <> n-1 then 
+				print(", ")
+		);
+		print("\n")
+	)
+	
+	var tmp:=0
+	
+	function sort(ia: intArray, n:int): intArray =(
+		for i := 0 to n-1 do
+		(	
+			for j := i to n-1 do
+			(
+				if ia[i]>ia[j] then (
+					tmp := ia[i]; 
+					ia[i] := ia[j]; 
+					ia[j] := tmp
+				)
+			)
+		);
+		ia
+	)
+	
+	var list := intArray[11] of 0
+	var sorted: intArray := nil
+	
+in	
+	for i :=0 to 10 do (
+		list[i] := 11-i
+	);
+	print("Unsorted: ");
+	printArray(list, 11);
+	print("Sorted: ");
+	sorted := sort(list, 11);
+	printArray(sorted, 11);
+	print("Initial array modified by reference: ");
+	printArray(list, 11)
+end

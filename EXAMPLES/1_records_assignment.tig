@@ -1,0 +1,30 @@
+/*Este programa imprime Somebody y 1000 en líneas independientes.
+	Luego imprime los 3 records con valores Nobody - 1000, Name1 - 1000 y Nobody - 20*/
+let
+	type  rectype = {name:string, age:int}
+	var rec1:rectype := rectype {name="Nobody", age=1000}
+	type arrtype = array of rectype
+	
+	var arr:arrtype := nil
+in
+	rec1.name := "Somebody";
+	printline(rec1.name);
+	printi(rec1.age);
+	
+	arr := arrtype[3] of rectype {name="Nobody", age=1000};
+	
+	arr[1].name := "Name1";
+	arr[2].age := 20;
+	
+	print("\n");
+	
+	for i := 0 to 2 do
+	(
+	print("Record number ");
+	printi(i);
+	print(concat(" ", arr[i].name));
+	print(" ");
+	printi(arr[i].age);
+	print("\n")
+	)
+end

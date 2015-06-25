@@ -1,0 +1,5 @@
+let
+	type string = break  /* línea A */
+in 
+	/* ... */
+end

@@ -1,0 +1,34 @@
+/*Este programa imprime todas las permutaciones del array [1, 2, 3, 4]*/
+
+let
+	type A = array of int
+	var n:= 4
+	var tom:= A[n] of 0
+	var perm:= A[n] of 0
+
+	function Perm(pos : int) =
+		let
+			function PrintPerm() = (
+				for j:= 0 to n - 1 do
+				(
+					printi(perm[j]);
+					print(" ")
+				);
+				print("\n")
+			)
+		in
+			if pos = n then 
+				PrintPerm()
+			else
+				for j:= 0 to n - 1 do
+					if not(tom[j]) then (
+						tom[j]:= 1;
+						perm[pos]:= j + 1;
+						Perm(pos + 1);
+						tom[j]:= 0
+					)
+		end
+in
+	Perm(0)
+end
+	

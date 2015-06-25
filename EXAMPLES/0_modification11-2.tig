@@ -1,0 +1,21 @@
+/* Este programa no es válido. 
+Aquí hay 6 secuencias de declaraciones (todas con un único elemento). 
+La función f1 no puede llamar a f2 porque f2 no es “visible” en el cuerpo de 
+f1. (Notar que f2 está declarada después que f1 en otra secuencia de 
+declaraciones de funciones.) La función f2 sí puede llamar a f1, porque f1 
+está declarada antes que f2. El campo Pet de Person no puede ser de tipo 
+Animal. (Notar que Animal está declarado después que Person en otra secuencia 
+de declaraciones de tipos.) La función g sí puede llamar a f1, porque f1 está 
+declarada antes que g. El campo Owner de Animal sí puede ser de tipo Person, 
+porque Person está declarado antes que Animal. */ 
+
+let 
+	function f1(n : int) : int = if n <= 0 then 1 else n * f2(n - 1) 
+	var x : int := 10 
+	function f2(n : int) : int = if n <= 0 then 1 else n * f1(n - 1) 
+	type Person = { Name : string, Pet : Animal } 
+	function g() = printi(f1(x)) 
+	type Animal = { Name : string, Owner : Person } 
+in 
+	g() 
+end

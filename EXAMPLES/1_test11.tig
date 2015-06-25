@@ -1,0 +1,66 @@
+﻿let
+	
+	function LEFT   (x : int)   :int =  2*x
+	function RIGHT(x : int)   :int =  2*x+1
+	
+	type arr = array of int
+	
+	var MAXN := 100010
+	var st         := arr[4*MAXN] of 0
+	var arr       := arr[MAXN]    of 0
+	var n 	    := 0
+	
+	function build(node : int, l : int , r : int ) = 
+	(
+		if( l = r) then
+		(
+			st[node] := arr[l]
+		)
+		else
+		(
+			let
+				var m  := (l+r)/2
+			in
+				build( LEFT(node)   , l      , m);
+				build (RIGHT(node),m+1,r   );
+				st[node] := st[LEFT(node)] + st[RIGHT(node)]
+			end
+		)
+	)
+	
+	function query(node : int, nodeL : int, nodeR : int, l : int, r : int) : int = 
+	(
+		if( l = nodeL & r = nodeR) then
+			st[node]
+		else
+		(
+			let
+				var m  := (nodeL + nodeR)/2
+			in
+				if(l > m) then query(RIGHT(node),m+1,nodeR,l,r)
+				else if(r <=m) then query(LEFT(node),nodeL,m,l,r)
+				else
+				(
+					query(LEFT(node),nodeL,m,l,m)
+					+ query(RIGHT(node),m+1,nodeR,m+1,r)
+				)
+			end
+		)
+	)	
+in
+		n := 100;
+		for i := 0 to n-1 do arr[i] := i;
+		
+		build(1,0,n-1);
+		for i:= 0 to n-1 do
+			for j := i to n-1 do
+			(
+				print("query(");
+				printi(i);
+				print(",");
+				printi(j);
+				print(") = ");
+				printiline( query( 1, 0 , n-1 , i ,  j ) )
+			)
+		/*getline()*/
+end

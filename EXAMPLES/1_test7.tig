@@ -1,0 +1,27 @@
+﻿let
+	type arr = array of int
+	type arr2 = array of arr
+	var i  := 0
+	var n := 1
+	var matrix := arr2[10] of arr[10] of 
+	(
+		if i < n then 
+			i := i+1
+		else 
+			n := n+1;
+		i
+	)
+	var cur : arr := nil
+in
+	for i := 0 to 9 do
+	(
+		cur := matrix[i];
+		for i := 0 to i do
+		(
+			printi(cur[i]);
+			print(" ")
+		);
+		printline("")
+	)
+	/*getline()*/
+end

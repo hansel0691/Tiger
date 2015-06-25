@@ -1,0 +1,52 @@
+let 
+	type arrayInt = array of int
+	var N := 0
+	var values : arrayInt := nil
+	
+	function binary_search(A : arrayInt, val:int, lower:int, upper:int) : int = 
+		if upper <= lower then
+			0
+		else
+			let	
+				var mid := (lower + upper) / 2
+			in
+				if A[mid] < val then
+					binary_search(A, val, mid + 1, upper)
+				else if A[mid] > val then
+					binary_search(A, val, lower, mid)
+				else
+					1
+			end
+	
+	function to_num(s:string) : int = (
+			let
+				var char := ""
+				var res := 0
+				var s_size := size(s)
+				var temp := 0
+				var minus := 0
+			in
+				for i := 0 to s_size - 1 do (
+					char := substring(s, 0, 1);
+					if char = "-" then 
+						minus := if minus = 0 then 1 else 0
+					else (
+						temp := ord(s);
+						temp := temp - 48;
+						res := res * 10 + temp
+					);
+					s := substring(s, 1, s_size - 1 - i)
+				);
+				if minus then -res else res
+			end
+		)
+	
+in
+	N := to_num(getline());
+	values := arrayInt[N] of 0;
+	for i := 0 to N - 1 do 
+		values[i] := to_num(getline());
+	getline();
+	for i := 0 to N - 1 do 
+		printline(if binary_search(values, to_num(getline()), 0, N) = 1 then "True" else "False")
+end

@@ -1,0 +1,7 @@
+/*Error: Declaración de 2 variables con igual nombre en un mismo scope*/
+let
+	var a := 0
+	var a := " "
+in
+	0
+end

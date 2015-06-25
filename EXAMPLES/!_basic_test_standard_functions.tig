@@ -1,0 +1,22 @@
+(
+printline("10");
+printline(concat("10",concat("*",chr(48))));
+printiline(25);
+printiline(-34*3);
+print("The substring of hello rene from pos 6 extending by 4 chars equal to: ");
+printline(substring("hello rene", 6, 4));
+print("Is of size: ");
+printiline(size(substring("hello rene", 6, 4)));
+printiline(not(-34 * -48));
+printiline(not(10 <> 10));
+printiline(10 = 10);
+printiline(-240 <> ---240);
+printiline(ord("0"));
+printline("The result of not(-20 = --20) <> 1 should be 0: ");
+printiline(not(-20 = --20) <> 1);
+printline(chr(34));
+printline(chr(65));
+printline(chr(126));
+exit(0);
+printiline(-20)
+)

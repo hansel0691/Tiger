@@ -1,0 +1,16 @@
+/*Este programa imprime los #s del 10 al 5*/
+let 
+	var s:= "start" /*"start\r\n"*/
+	var TRUE:= 1
+	var i:= 10	
+	
+in	
+	/*while ord(s)<>i do (s:=getchar(); print("getchar:"); print(s); printi(ord(s)); print("\n"));	*/
+	while TRUE do (
+		printi(i);
+		print("\n"); 
+		if i = 5 then 
+			break; 
+		i := i - 1)
+	/*;	printi(ord("\n"))*/
+end

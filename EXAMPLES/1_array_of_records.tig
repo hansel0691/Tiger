@@ -1,0 +1,55 @@
+/*Este programa imprime un array de records (las posiciones 2, 3 y 4 son != nil)*/
+
+let 
+	type r = {hd: int, tl: r}
+	type s = array of r
+	
+	function printList(r:r) = (
+		let 
+			var c := r
+		in 
+			while c <> nil do (
+				print("hd: "); 
+				printi(c.hd); 
+				print("\n"); 
+				c := r.tl
+			);
+			print("tl is nil\n")
+		end
+	)
+	
+	function printRec(r:r) = (
+		if r <> nil then (
+			print("{ hd: "); 
+			printi(r.hd); 
+			print(" tl: "); 
+			printRec(r.tl); print("}")
+		)
+		else (
+			print("nil")
+		)
+	)
+	
+	var N := 10
+	var r := r{hd=1, tl=nil}
+	var s := s[N] of nil
+	/*var t := t{hd=0, tl=nil}
+	var s := s[10] of nil*/
+	
+in	
+	s[2] := r;
+	/*r.tl := r;*/ /*rec...*/
+	s[3] := r;
+	s[4] := r{hd=4, tl=r};
+	for i := 0 to N-1 do (
+		print("s["); 
+		printi(i); 
+		print("] = ");
+		if s[i] <> nil then 
+			printRec(s[i]) 
+		else 
+			print("nil"); 
+		print("\n")
+	);
+	print("\n")
+end

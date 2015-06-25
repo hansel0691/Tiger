@@ -1,0 +1,7 @@
+/*Error: VarDeclaration donde no se puede inferir el tipo de la variable*/
+
+let 
+	var a := ()
+in
+	a + 3
+end

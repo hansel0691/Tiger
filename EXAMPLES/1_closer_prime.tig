@@ -1,0 +1,40 @@
+/*Este programa imprime 59*/
+
+let	
+	function PrimoMasCercano(n:int):int=
+		if EsPrimo(n) then 
+			n
+		else
+			let
+				var i := 1
+				var res := 0
+			in
+				while 1 do (
+					if EsPrimo(n+i) then ( 
+						res := n+i; 
+						break
+					)
+					else if n - i > 0 & EsPrimo(n - i) then (
+						res := n - i; 
+						break
+					); 
+					i := i + 1
+				);
+				res
+			end
+			
+	function EsPrimo(n:int):int= 
+		let 
+			var primo := 1
+		in
+			for i := 2 to n-1 do 
+				if n - i*(n/i) = 0 then (
+					primo := 0;
+					break
+				);
+			primo
+		end
+		
+in	
+	printi(PrimoMasCercano(56))
+end

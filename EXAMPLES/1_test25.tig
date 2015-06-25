@@ -1,0 +1,6 @@
+﻿let
+	type rec = {pepe,nil}
+	var x := rec{pepe = 1}
+in
+	
+end

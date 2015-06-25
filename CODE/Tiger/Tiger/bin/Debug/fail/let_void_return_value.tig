@@ -1,0 +1,9 @@
+let
+    var problem := let var a:=1 in () end
+in
+    print(problem)
+end
+
+/*
+Semantic Error: Initialization expression doesn't return a value at line 2.
+*/

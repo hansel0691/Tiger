@@ -1,0 +1,7 @@
+/*Error: VarDeclaration con tipo de value != tipo declarado*/
+
+let
+	var x:string:=2
+	var y:int:="a"
+in
+end

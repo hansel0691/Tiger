@@ -1,0 +1,9 @@
+let
+	var a:= rectype {}
+in
+	0
+end
+
+/*
+Semantic Error: Undefined type rectype at line 2.
+*/

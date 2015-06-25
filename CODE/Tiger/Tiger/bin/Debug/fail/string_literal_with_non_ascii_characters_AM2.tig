@@ -1,0 +1,8 @@
+let
+    var s := "This string contains non-ASCII characters: ñ, á, ü, È..." 
+in
+end
+
+/*
+Syntactic Error: Invalid character at line 2 column 58.
+*/

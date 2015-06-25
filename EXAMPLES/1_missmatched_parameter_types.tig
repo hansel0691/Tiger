@@ -1,0 +1,6 @@
+/*Error: FunctionCall con tipo de parámetro real != tipo declarado*/
+let
+	function g (a:int , b:string):int = a
+in
+	g("one", "two")
+end

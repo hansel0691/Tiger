@@ -1,0 +1,11 @@
+/*Error: VarDeclaration con tipo != del tipo declarado y 
+		 Salida del programa con tipo != int o string*/
+
+let
+	type arrtype1 = array of int
+	type arrtype2 = array of int
+
+	var arr1: arrtype1 := arrtype2 [10] of 0
+in
+	arr1
+end

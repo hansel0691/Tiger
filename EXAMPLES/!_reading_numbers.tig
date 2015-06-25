@@ -1,0 +1,55 @@
+let
+	type intArray = array of int
+	var values := intArray[40] of 0
+	var input := ""
+	var output := 0
+	var flag := 0
+	
+	function to_num(s:string) : int = (
+		let
+			var char := ""
+			var res := 0
+			var s_size := size(s)
+			var temp := 0
+			var minus := 0
+			var done := 0
+		in
+			flag := 0;
+			for i := 0 to s_size - 1 do (
+				char := substring(s, 0, 1);
+				if char = "-" then 
+					if done = 1 then (
+						flag := 1;
+						break
+					)
+					else
+						(minus :=  if minus = 0 then 1 else 0)
+				else if ord(char) < 48 | ord(char) > 57 then(
+					flag := 1;
+					break
+				)
+				else (
+					done := 1;
+					temp := ord(s);
+					temp := temp - 48;
+					res := res * 10 + temp
+				);
+				s := substring(s, 1, s_size - 1 - i)
+			);
+			if minus then -res else res
+		end
+	)
+	
+	function index(s: string, i: int) : string = 
+		substring(s, i, 1)
+	
+in 
+	for i :=0 to 7 do (
+		input := getline();
+		output := to_num(input);
+		if flag <> 1 then
+			printiline(output)
+		else
+			printline("Invalid number")
+	)
+end

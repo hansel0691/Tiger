@@ -1,0 +1,5 @@
+﻿let
+	function f (a:int,a:string) = q(2,2)
+	function q(b:int,b:string) = f(2,2)
+in
+end

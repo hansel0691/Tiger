@@ -1,0 +1,9 @@
+/* Este programa no es válido. Si lo fuera, a una variable que se declare con 
+tipo string justo tras la línea A en la sección let-in no podría asignársele 
+un literal de cadena de caracteres. */
+
+let 
+	type string = int       /* línea A */ 
+in 
+	/* ... */ 
+end

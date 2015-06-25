@@ -1,0 +1,24 @@
+﻿let
+	function f() : string =  
+		let
+			var s := substring("pepe",0,2)
+		in
+			s
+		end
+	
+	function f1() :string =  
+		let
+			var s := substring("pepe",0,2)
+		in
+			nil
+		end
+in
+	printiline(nil   = f() );
+	printiline(f()   = nil);
+	printiline(f()   = f() );
+	printiline(f()   = f1() );
+	printiline(f1() = f() );
+	printiline(f1() = f1() );
+	printiline(nil  = f1() );
+	printiline(f1() = nil )
+end

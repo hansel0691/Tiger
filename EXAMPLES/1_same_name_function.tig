@@ -1,0 +1,7 @@
+/*Error: FuncDeclaration de una función que ya existe en este scope*/
+let
+	function g(a:int):int = a
+	function g(a:int):int = a
+in
+	0
+end

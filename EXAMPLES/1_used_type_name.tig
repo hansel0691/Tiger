@@ -1,0 +1,7 @@
+/*Error: Declaración de 2 tipos con igual nombre en un mismo scope*/
+let
+	type a = int
+	type a = string
+in
+	0
+end

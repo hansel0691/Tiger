@@ -1,0 +1,5 @@
+for i := 1 to () do ()
+
+/*
+Semantic Error: The expression for the upper bound of the for loop at line 1 does not return a value.
+*/

@@ -1,0 +1,18 @@
+/*Este programa imprime 2*/
+
+let 
+	function rem( x : int, y : int) : int =	(
+		let 
+			var d := x / y
+		in 
+			x - d * y
+		end
+	)
+	
+	type r = { hd : int, tl : string}
+	var r := 0
+	var s : r := nil
+in
+	r := rem( 23, 3);
+	printi(r)
+end

@@ -1,0 +1,5 @@
+if - () | 1 then ()
+
+/*
+Semantic Error: The expression of the unary minus operator at line 1 does not return a value.
+*/

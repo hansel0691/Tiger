@@ -1,0 +1,7 @@
+﻿let
+	type a = b
+	type b = a
+	type c = {p1:a,p2:b}
+	var pepe : c := c { p1 = 2, p2 = 3 }
+in
+end

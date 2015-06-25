@@ -1,0 +1,5 @@
+if 0 <> 1 <> 2 then ()
+
+/*
+Syntactic Error: Unexpected token NE at line 1 column 10.
+*/

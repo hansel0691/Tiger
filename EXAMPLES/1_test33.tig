@@ -1,0 +1,81 @@
+﻿let
+	var listlen := 0
+	type list = array of int
+	type linkedlist = { first : int , tail : linkedlist }
+	function readlist():list = 
+	(
+		let
+			function readint():int = 
+				let
+					var s := getline()
+					var x := 0
+				in
+					for i := 0 to size(s)-1 do
+					(
+						x := 10*x + ord(s)-ord("0");
+						s := substring(s,1,size(s)-1)
+					);
+					x
+				end
+			var len := readint()
+			var arr := list[len] of 0
+		in
+			listlen := len;
+			for i := 0 to len-1 do
+				arr[i] := readint();
+			arr
+		end
+	)
+	var list:list := nil
+	var pepe : linkedlist := nil
+	
+	function printlist(list:list,len:int) = 
+	(
+		for i := 0 to len - 1 do
+		(
+			printi(list[i]);
+			print(" ")
+		);
+		print("\n")
+	)
+in
+	let
+		function sort( list:list, len:int ) = 
+		(
+			let
+				var min := 0
+				var minpos := 0
+				var temp := 0
+			in
+				for i:= 0 to len -1 do
+				(
+					min := list[i];
+					minpos := i;
+					for j := i to len - 1 do
+					(
+						if list[j] <= min then (min := list[j] ; minpos :=j) 
+					);
+					temp := list[i];
+					list[i] := list[minpos];
+					list[minpos] := temp
+				)
+			end
+		)
+		var x := 1
+	in
+		listlen := 24;
+		list := list[listlen] of 
+		(
+			let 
+				function mod(x:int,n:int):int = if x > n then x - n*(x/n) else x
+			in
+				x := mod(x +237, 27);
+				x
+			end
+		);
+		printlist(list,listlen);
+		sort(list,listlen);
+		printlist(list,listlen)
+	end
+end
+	

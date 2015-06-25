@@ -1,0 +1,5 @@
+while 0 | 1 do 0 | 1
+
+/* 
+Semantic Error: while used with an expression with return value at line 1. 
+*/

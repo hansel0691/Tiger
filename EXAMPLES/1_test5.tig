@@ -1,0 +1,36 @@
+﻿let
+	function f() : string =  
+		let
+			var s := substring("pepe",0,2)
+		in
+			s
+		end
+
+	function f2() :string =  
+		let
+			var s := substring("pepe",0,2)
+		in
+			"pee"
+		end
+in	
+	printline("<=");
+	printiline(f()   <= f() );
+	printiline(f()   <= f2());
+	printiline(f2() <= f() );
+	printiline(f2() <= f2());
+	printline(">=");
+	printiline(f()   >= f() );
+	printiline(f()   >= f2());
+	printiline(f2() >= f() );
+	printiline(f2() >= f2());
+	printline("<");
+	printiline(f()   < f() );
+	printiline(f()   < f2());
+	printiline(f2() < f() );
+	printiline(f2() < f2());
+	printline(">");
+	printiline(f()   > f() );
+	printiline(f()   > f2());
+	printiline(f2() > f() );
+	printiline(f2() > f2())
+end

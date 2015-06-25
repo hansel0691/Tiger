@@ -1,0 +1,13 @@
+(
+	1+ print("a");
+	1 - print("a");
+	1 * print("a");
+	1 / print("a")
+)
+
+/*
+Semantic Error: Invalid use of plus operator with a non-valued right expression at line 2.
+Semantic Error: Invalid use of minus operator with a non-valued right expression at line 3.
+Semantic Error: Invalid use of multiply operator with a non-valued right expression at line 4.
+Semantic Error: Invalid use of divide operator with a non-valued right expression at line 5.
+*/

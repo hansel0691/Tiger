@@ -1,0 +1,102 @@
+let
+	type node = {
+		color : int,        /* 0 = black, otherwise = red */
+		count : int,        /* frequency count */
+		word  : string,	/* word itself */
+		left  : node,       /* left subtree */
+		right : node        /* right subtree */
+	}
+	
+	var root    : node := nil
+	var black   := 0
+	var red     := 1
+
+	function err(s : string) = (
+		print("? "); 
+		print(s); 
+		printline("");
+		exit(1)
+	)
+
+	function balance (color: int, count: int, word: string, left: node, right: node): node =
+		if ( color = black & left <> nil & left.left <> nil & left.color = red & left.left.color = red) then
+			node {color = red, count = left.count, word = left.word, 
+				left = node {color = black, count = left.left.count, word = left.left.word, 
+							 left = left.left.left, right = left.left.right}, 
+				right = node {color = black, count = count, word  = word, 
+							  left  = left.right, right = right}
+            }               
+		else if (color = black & left <> nil & left.right <> nil & left.color = red & left.right.color = red) then
+			node {color = red, count = left.right.count, word = left.right.word, 
+				left  = node {color = black, count = left.count, word  = left.word, 
+							  left  = left.left, right = left.right.left}, 
+				right = node {color = black, count = count, word  = word, 
+							  left  = left.right.right, right = right}
+            }               
+		else if (color = black & right <> nil & right.right <> nil & right.color = red & right.right.color = red) then
+			node {color = red, count = right.count, word = right.word, 
+				  left = node {color = black, count = count, word  = word, 
+							   left  = left, right = right.left}, 
+				  right = node {color = black, count = right.right.count, word = right.right.word, 
+								left = right.right.left, right = right.right.right}
+            }               
+		else if (color = black & right <> nil & right.left <> nil & right.color = red & right.left.color = red) then
+			node {color = red, count = right.left.count, word = right.left.word, 
+				  left = node {color = black, count = count, word  = word, 
+							   left  = left, right = right.left.left}, 
+				  right = node {color = black, count = right.count, word  = right.word, 
+								left  = right.left.right, right = right.right}
+            }               
+		else
+			node {color = color, count = count, word = word, left = left, right = right}
+
+	function ins (word: string, p: node): node =
+		if (p = nil) then 
+			node {color = red, count = 1, word = word, left = nil, right = nil}
+		else if (word < p.word) then
+			balance (p.color, p.count, p.word, ins(word,p.left), p.right)
+		else if (word > p.word) then
+			balance (p.color, p.count, p.word, p.left, ins(word,p.right))
+		else( 
+			if word <> p.word then 
+				print ("error!");
+			node{color = p.color, count = p.count + 1, word = word, left = p.left, right = p.right}
+        )
+
+	function insert (word: string, p: node) : node =
+		let 
+			var x := ins(word, p)
+		in
+			node {color = black, count = x.count, word = x.word, left = x.left, right = x.right} 
+		end
+
+/* add_word - add word to tree: install or increment count */
+	function add_word(word : string) =
+		root := insert(word, root)
+
+/* tprint - print tree */
+	function tprint(tree : node) =
+		if tree <> nil then (
+			tprint(tree.left);
+			printi(tree.count); 
+			print("\t"); 
+			print(tree.word); 
+			printline("");
+			tprint(tree.right)
+		) 
+
+	function main() = 
+		let 
+			var word := ""
+		in
+			word := getline();
+			while size(word) > 0 do (
+				add_word(word);
+				word := getline()
+			);
+			tprint(root)
+		end
+
+in 
+	main()
+end

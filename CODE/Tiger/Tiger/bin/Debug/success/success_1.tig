@@ -1,0 +1,29 @@
+/* testing basic let in end */
+let
+	/* Declaring variables */
+	var name :string := "rene"
+	var edad := 23
+	
+	/* Declaring functions */
+	function hello() = ()
+	function return_hello(name:string, edad:int) : string
+	= "hello " + name + " " + edad
+	
+	/* Declaring types */
+	type Integer = int
+	type intArrary = array of Integer
+	type person = {name:string, edad:int}
+	type people = array of person
+	
+	type home = {Persons:people, count:int}
+	
+	var robin_house := home{Persons = people[6] of ex, count = 6}
+in 
+	hello(); 
+	return_hello(name, 23);
+	robin_house.Persons;
+	robin_house.count := 7;
+	robin_house.Persons[0];
+	robin_house.Persons[0].name;
+	robin_house.Persons[0].name := "Roberto"
+end

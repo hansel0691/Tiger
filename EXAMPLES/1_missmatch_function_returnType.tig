@@ -1,0 +1,7 @@
+/*Error: FuncDeclaration con tipo de retorno != al declarado*/
+let
+	function g(a:int) = (printi(a);a)
+in 
+	g(2)
+end
+

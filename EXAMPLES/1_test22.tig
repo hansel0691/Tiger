@@ -1,0 +1,6 @@
+﻿let
+	var i := 1
+in
+	for i := (i := i+1 ; i+1) to (i := i+1 ; i+3) do
+		printline("this should be printed 4 times")
+end

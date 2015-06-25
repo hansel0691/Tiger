@@ -1,0 +1,25 @@
+/*Este programa imprime 168*/
+
+let
+	function MCD (a:int, b:int):int =
+		let
+			var res := 1
+		in 	
+			if a = b then 
+				1
+			else( 
+				for n:=2 to if a > b then b else a do
+					if Resto(a,n) = 0 & Resto(b,n) = 0 then 
+						res := n;
+				res
+			)
+		end
+		
+	function Resto(a:int, b:int):int = 
+		a - (a/b) * b
+in
+	printi(MCD(3,5));
+	printi(MCD(12,18));
+	printi(MCD(8,24))
+end 
+			

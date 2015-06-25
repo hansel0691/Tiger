@@ -1,0 +1,539 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Tiger.Adaptor" Collapsed="true">
+    <Position X="102" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAA=</HashCode>
+      <FileName>01 Adaptor\Adaptor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tiger.FieldAssignNode" Collapsed="true">
+    <Position X="5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAgAEAAgAA=</HashCode>
+      <FileName>02 Nodes\01 Language\05 Instructions\FieldAssignNode.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tiger.Scope" Collapsed="true">
+    <Position X="102" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgQAIAAGgAAARAACACQAQAAAAIAAAgmAABQAAgAEAAA=</HashCode>
+      <FileName>03 Semantics\01 Scope.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tiger.Symbols" Collapsed="true">
+    <Position X="105.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>MAEAIAAFAEBAkAAAAAAAAAACCCAAAIAooAQIAAAEASA=</HashCode>
+      <FileName>04 Code Generation\00 Symbols.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tiger.Program" Collapsed="true">
+    <Position X="105.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAAQAAAAAIAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tiger.AST_Nodes.TigerNode" Collapsed="true">
+    <Position X="52.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>02 Nodes\00 Base\TigerNode.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tiger.AST_Nodes.LanguageNode" Collapsed="true">
+    <Position X="52.25" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAgAAAAAAAAgAAAAAAAEAAAAA=</HashCode>
+      <FileName>02 Nodes\01 Language\00 Base\LanguageNode.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tiger.AST_Nodes.ProgramNode" Collapsed="true">
+    <Position X="14" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAQAAAAAEAAAAA=</HashCode>
+      <FileName>02 Nodes\01 Language\01 Program\ProgramNode.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tiger.AST_Nodes.ExpressionNode" Collapsed="true">
+    <Position X="59" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIA=</HashCode>
+      <FileName>02 Nodes\01 Language\05 Instructions\ExpressionNode.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tiger.AST_Nodes.StatementNode" Collapsed="true">
+    <Position X="28.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIA=</HashCode>
+      <FileName>02 Nodes\01 Language\05 Instructions\StatementNode.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tiger.AST_Nodes.ValuedExpressionNode" Collapsed="true">
+    <Position X="70.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>02 Nodes\ValuedExpressionNode.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tiger.AST_Nodes.Declarations.DeclarationBlocks.DeclarationBlock" Collapsed="true">
+    <Position X="7.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAEAAAAABAACAAAAIQAAAABAiAkAAAAAECAAAA=</HashCode>
+      <FileName>02 Nodes\01 Language\02 Declarations\00 DeclarationBlocks\00 Base\DeclarationBlock.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Tiger.AST_Nodes.Declarations.DeclarationBlocks.FieldDeclarationBlock" Collapsed="true">
+    <Position X="11.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAABAACAAAAAQAAAAAAgAEAAAAAEAAAAA=</HashCode>
+      <FileName>02 Nodes\01 Language\02 Declarations\00 DeclarationBlocks\FieldDeclarationBlock.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Tiger.AST_Nodes.Declarations.DeclarationNode" Collapsed="true">
+    <Position X="26.25" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAA=</HashCode>
+      <FileName>02 Nodes\01 Language\02 Declarations\01 DeclarationNode\00 Base\DeclarationNode.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tiger.AST_Nodes.Declarations.AliasDeclarationNode" Collapsed="true">
+    <Position X="27.5" Y="9.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAIAAAAAAAAAAAAAAAAAAgAAAAAAAEAAAAA=</HashCode>
+      <FileName>02 Nodes\01 Language\02 Declarations\01 DeclarationNode\AliasDeclarationNode.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tiger.AST_Nodes.Declarations.ArrayDeclarationNode" Collapsed="true">
+    <Position X="29.75" Y="9.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAIAAEAAAAA=</HashCode>
+      <FileName>02 Nodes\01 Language\02 Declarations\01 DeclarationNode\ArrayDeclarationNode.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tiger.AST_Nodes.Declarations.FieldDeclarationNode" Collapsed="true">
+    <Position X="16.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAhAAAAAAAEAAgAA=</HashCode>
+      <FileName>02 Nodes\01 Language\02 Declarations\01 DeclarationNode\FieldDeclarationNode.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tiger.AST_Nodes.Declarations.FunctionDeclarationNode" Collapsed="true">
+    <Position X="23" Y="9.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAAAgAAIAAAAAAEAAA=</HashCode>
+      <FileName>02 Nodes\01 Language\02 Declarations\01 DeclarationNode\FunctionDeclarationNode.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tiger.AST_Nodes.Declarations.ProcedureDeclarationNode" Collapsed="true">
+    <Position X="20.75" Y="9.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAAAgAAIAAAAAAEAAA=</HashCode>
+      <FileName>02 Nodes\01 Language\02 Declarations\01 DeclarationNode\ProcedureDeclarationNode.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tiger.AST_Nodes.Declarations.RecordDeclarationNode" Collapsed="true">
+    <Position X="25.25" Y="9.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAQAAEAAAAA=</HashCode>
+      <FileName>02 Nodes\01 Language\02 Declarations\01 DeclarationNode\RecordDeclarationNode.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tiger.AST_Nodes.Declarations.RoutineDeclarationNode" Collapsed="true">
+    <Position X="21.75" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAABAAAAAAAAAAAAAAEAAAAAAAAAAIAAAQEAEAAA=</HashCode>
+      <FileName>02 Nodes\01 Language\02 Declarations\01 DeclarationNode\RoutineDeclarationNode.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tiger.AST_Nodes.Declarations.TypeDeclarationNode" Collapsed="true">
+    <Position X="27.5" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAA=</HashCode>
+      <FileName>02 Nodes\01 Language\02 Declarations\01 DeclarationNode\TypeDeclarationNode.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tiger.AST_Nodes.Declarations.VariableDeclarationNode" Collapsed="true">
+    <Position X="32" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAACAAAAAAAAAAAAAAAAAgAAAAAgQEAAAAA=</HashCode>
+      <FileName>02 Nodes\01 Language\02 Declarations\01 DeclarationNode\VariableDeclarationNode.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tiger.AST_Nodes.FlowControl.ForNode" Collapsed="true">
+    <Position X="36.5" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAYAAAAAAAAAAAAAAAAAAAAAgAAAAAACEAAAAA=</HashCode>
+      <FileName>02 Nodes\01 Language\03 FlowControl\ForNode.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tiger.AST_Nodes.FlowControl.IfThenElseNode" Collapsed="true">
+    <Position X="88.25" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAABAAACAAAAAAQAAAAAAAAAAAgAAAAAAAEAAAIA=</HashCode>
+      <FileName>02 Nodes\01 Language\03 FlowControl\IfThenElseNode.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tiger.AST_Nodes.FlowControl.LetInEndNode" Collapsed="true">
+    <Position X="92.75" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAACAAAAAAAAAAAAAAAAAAAAAgABAAAAAEAAAIA=</HashCode>
+      <FileName>02 Nodes\01 Language\03 FlowControl\LetInEndNode.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tiger.AST_Nodes.FlowControl.WhileNode" Collapsed="true">
+    <Position X="38.75" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAIAACAAAAAAAAAAAAAAAAAAgAAAAAAAEAAAAA=</HashCode>
+      <FileName>02 Nodes\01 Language\03 FlowControl\WhileNode.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tiger.AST_Nodes.Instance.InstanceIntNode" Collapsed="true">
+    <Position X="41" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAgAEAAAIA=</HashCode>
+      <FileName>02 Nodes\01 Language\04 Instance\InstanceIntNode.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tiger.AST_Nodes.Instance.InstanceRecordNode" Collapsed="true">
+    <Position X="43.25" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAAAAAAAAAAAAAAAQAAAAAAgAAAAAAAEAAAIA=</HashCode>
+      <FileName>02 Nodes\01 Language\04 Instance\InstanceRecordNode.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tiger.AST_Nodes.Instance.InstanceStringNode" Collapsed="true">
+    <Position X="79.25" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAgAEAAAIA=</HashCode>
+      <FileName>02 Nodes\01 Language\04 Instance\InstanceStringNode.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tiger.AST_Nodes.Instance.InstanceTypeArrayNode" Collapsed="true">
+    <Position X="81.5" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAABAAABAAgAAAAAAAEIAAIA=</HashCode>
+      <FileName>02 Nodes\01 Language\04 Instance\InstanceTypeArrayNode.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tiger.AST_Nodes.Instance.NilNode" Collapsed="true">
+    <Position X="83.75" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAEAAAIA=</HashCode>
+      <FileName>02 Nodes\01 Language\04 Instance\NilNode.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tiger.AST_Nodes.Instructions.AccessNodes.AccessFieldNode" Collapsed="true">
+    <Position X="95" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAQAAAAAAAAAAgAAAAAAAEAABIA=</HashCode>
+      <FileName>02 Nodes\01 Language\05 Instructions\AccessNodes\AccessFieldNode.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tiger.AST_Nodes.Instructions.AccessNodes.ArrayItemNode" Collapsed="true">
+    <Position X="97.25" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAQAAAAAAAAAAgAAAAAAAEIAAIA=</HashCode>
+      <FileName>02 Nodes\01 Language\05 Instructions\AccessNodes\ArrayItemNode.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tiger.AST_Nodes.Instructions.AccessNodes.FieldNestedNode" Collapsed="true">
+    <Position X="47.75" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAIAAAAEAAAAA=</HashCode>
+      <FileName>02 Nodes\01 Language\05 Instructions\AccessNodes\FieldNestedNode.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tiger.AST_Nodes.Instructions.AccessNodes.IdNode" Collapsed="true">
+    <Position X="99.5" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABAAAAAAAAAAAAAAAAAAAAgAAAAAAAEAAAIA=</HashCode>
+      <FileName>02 Nodes\01 Language\05 Instructions\AccessNodes\IdNode.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tiger.AST_Nodes.Instructions.AccessNodes.IndexNestedNode" Collapsed="true">
+    <Position X="45.5" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAEAAEAAAIA=</HashCode>
+      <FileName>02 Nodes\01 Language\05 Instructions\AccessNodes\IndexNestedNode.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tiger.AST_Nodes.Instructions.AccessNodes.NestedNode" Collapsed="true">
+    <Position X="46.5" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAQAAAAAAAAAAgAAAAAAAAAAAIA=</HashCode>
+      <FileName>02 Nodes\01 Language\05 Instructions\AccessNodes\NestedNode.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tiger.AST_Nodes.Instructions.ArgumentListNode" Collapsed="true">
+    <Position X="9.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAABAACAAAAAQAAAAAAgAEAAAAAEAAAAA=</HashCode>
+      <FileName>02 Nodes\01 Language\05 Instructions\ArgumentListNode.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Tiger.AST_Nodes.Instructions.AssignNode" Collapsed="true">
+    <Position X="18.5" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAABAAAAAAAAAAAAAAAAAAAgAACAAAQEAAAAE=</HashCode>
+      <FileName>02 Nodes\01 Language\05 Instructions\AssignNode.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tiger.AST_Nodes.Instructions.BreakNode" Collapsed="true">
+    <Position X="34.25" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAgACAAAAAEAAAAA=</HashCode>
+      <FileName>02 Nodes\01 Language\05 Instructions\BreakNode.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tiger.AST_Nodes.Instructions.CallRoutineNode" Collapsed="true">
+    <Position X="86" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAgAAAAAAgAAIAAAAEAAAIA=</HashCode>
+      <FileName>02 Nodes\01 Language\05 Instructions\CallRoutineNode.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tiger.AST_Nodes.Instructions.ExpressionSequence" Collapsed="true">
+    <Position X="90.5" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAAAAAAAAAAACAAAAAQAAAAAAgAAAAAAAEAAAIA=</HashCode>
+      <FileName>02 Nodes\01 Language\05 Instructions\ExpressionSequence.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tiger.AST_Nodes.Instructions.LValueNode" Collapsed="true">
+    <Position X="97.25" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>02 Nodes\01 Language\05 Instructions\LValueNode.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tiger.AST_Nodes.Operators.Arithmetical.ArithmeticNode" Collapsed="true">
+    <Position X="72.5" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>02 Nodes\01 Language\06 Operators\Arithmetical\00 Base\ArithmeticNode.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tiger.AST_Nodes.Operators.Arithmetical.ArithmeticUnaryOperatorNode" Collapsed="true">
+    <Position X="68" Y="9.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAgAAAAAAAAAIA=</HashCode>
+      <FileName>02 Nodes\01 Language\06 Operators\Arithmetical\00 Base\ArithmeticNode.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tiger.AST_Nodes.Operators.Arithmetical.ArithmeticBinaryOperatorNode" Collapsed="true">
+    <Position X="73.5" Y="9.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAgAAAAAIggAAAAAAEAAAIA=</HashCode>
+      <FileName>02 Nodes\01 Language\06 Operators\Arithmetical\00 Base\ArithmeticNode.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tiger.AST_Nodes.Operators.Arithmetical.DivNode" Collapsed="true">
+    <Position X="70.25" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>02 Nodes\01 Language\06 Operators\Arithmetical\DivNode.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tiger.AST_Nodes.Operators.Arithmetical.MinusBinaryNode" Collapsed="true">
+    <Position X="72.5" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>02 Nodes\01 Language\06 Operators\Arithmetical\MinusBinaryNode.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tiger.AST_Nodes.Operators.Arithmetical.MinusUnaryNode" Collapsed="true">
+    <Position X="68" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAA=</HashCode>
+      <FileName>02 Nodes\01 Language\06 Operators\Arithmetical\MinusUnaryNode.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tiger.AST_Nodes.Operators.Arithmetical.MultNode" Collapsed="true">
+    <Position X="74.75" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>02 Nodes\01 Language\06 Operators\Arithmetical\MultNode.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tiger.AST_Nodes.Operators.Arithmetical.PlusNode" Collapsed="true">
+    <Position X="77" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>02 Nodes\01 Language\06 Operators\Arithmetical\PlusNode.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tiger.AST_Nodes.Operators.Logical.LogicalNode" Collapsed="true">
+    <Position X="64.5" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAIggAAAAAAAAAAIA=</HashCode>
+      <FileName>02 Nodes\01 Language\06 Operators\Logical\00 Base\LogicalNode.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tiger.AST_Nodes.Operators.Logical.AndNode" Collapsed="true">
+    <Position X="65.75" Y="9.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAA=</HashCode>
+      <FileName>02 Nodes\01 Language\06 Operators\Logical\AndNode.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tiger.AST_Nodes.Operators.Logical.OrNode" Collapsed="true">
+    <Position X="63.5" Y="9.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAA=</HashCode>
+      <FileName>02 Nodes\01 Language\06 Operators\Logical\OrNode.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tiger.AST_Nodes.Operators.OperatorNode" Collapsed="true">
+    <Position X="63.5" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>02 Nodes\01 Language\06 Operators\OperatorDefinitions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tiger.AST_Nodes.Operators.Relational.RelationalNode" Collapsed="true">
+    <Position X="55.5" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAIAgAAAAAAAAAAIA=</HashCode>
+      <FileName>02 Nodes\01 Language\06 Operators\Relational\00 Base\RelationalNode.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tiger.AST_Nodes.Operators.Relational.EqualyComparison" Collapsed="true">
+    <Position X="51" Y="9.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAA=</HashCode>
+      <FileName>02 Nodes\01 Language\06 Operators\Relational\00 Base\RelationalNode.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tiger.AST_Nodes.Operators.Relational.OrderComparison" Collapsed="true">
+    <Position X="57.75" Y="9.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAA=</HashCode>
+      <FileName>02 Nodes\01 Language\06 Operators\Relational\00 Base\RelationalNode.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tiger.AST_Nodes.Operators.Relational.EqualNode" Collapsed="true">
+    <Position X="52.25" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAA=</HashCode>
+      <FileName>02 Nodes\01 Language\06 Operators\Relational\EqualNode.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tiger.AST_Nodes.Operators.Relational.GreaterEqualThanNode" Collapsed="true">
+    <Position X="56.75" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAA=</HashCode>
+      <FileName>02 Nodes\01 Language\06 Operators\Relational\GreaterEqualThanNode.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tiger.AST_Nodes.Operators.Relational.GreaterThanNode" Collapsed="true">
+    <Position X="59" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAA=</HashCode>
+      <FileName>02 Nodes\01 Language\06 Operators\Relational\GreaterThanNode.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tiger.AST_Nodes.Operators.Relational.LowerEqualThanNode" Collapsed="true">
+    <Position X="61.25" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAA=</HashCode>
+      <FileName>02 Nodes\01 Language\06 Operators\Relational\LowerEqualThanNode.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tiger.AST_Nodes.Operators.Relational.LowerThanNode" Collapsed="true">
+    <Position X="54.5" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAA=</HashCode>
+      <FileName>02 Nodes\01 Language\06 Operators\Relational\LowerThanNode.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tiger.AST_Nodes.Operators.Relational.NotEqualNode" Collapsed="true">
+    <Position X="50" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAA=</HashCode>
+      <FileName>02 Nodes\01 Language\06 Operators\Relational\NotEqualNode.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tiger._03_Semantics.ItemInfo" Collapsed="true">
+    <Position X="3.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAgAQAAAAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>03 Semantics\00 ItemInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tiger._03_Semantics.VariableInfo" Collapsed="true">
+    <Position X="0.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAA=</HashCode>
+      <FileName>03 Semantics\00 ItemInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tiger._03_Semantics.RoutineInfo" Collapsed="true">
+    <Position X="2.75" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAEAAA=</HashCode>
+      <FileName>03 Semantics\00 ItemInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tiger._03_Semantics.TypeInfo" Collapsed="true">
+    <Position X="6" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IBAACAAAAAAAAAAAAAAAAAAAAAAAAEAAAAgAAAAAAAA=</HashCode>
+      <FileName>03 Semantics\00 ItemInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tiger._03_Semantics.RecordInfo" Collapsed="true">
+    <Position X="5" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAIAAAAAAAAA=</HashCode>
+      <FileName>03 Semantics\00 ItemInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tiger._03_Semantics.ArrayInfo" Collapsed="true">
+    <Position X="7.25" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>03 Semantics\00 ItemInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tiger._03_Semantics.ParameterInfo" Collapsed="true">
+    <Position X="103.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAQAAAAAA=</HashCode>
+      <FileName>03 Semantics\00 ItemInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tiger.AST_Nodes.AST_Utils.SemanticError" Collapsed="true">
+    <Position X="103.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQgEgACQUAyZIAAAAEBQAADACKAEAAAAgAIIIAEBgCA=</HashCode>
+      <FileName>03 Semantics\02 SemanticError.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="tigerLexer" Collapsed="true">
+    <Position X="102" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>DwtOdpx7bcytu8T18tLsrtOEqulsN9V6lBN4q4XWnao=</HashCode>
+      <FileName>tigerLexer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="tigerParser" Collapsed="true">
+    <Position X="103.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>DwbGQpxbrFoN8oiVwFGCnlKsmu08M20DHAACqalEiCs=</HashCode>
+      <FileName>tigerParser.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="Tiger._03_Semantics.TypesEnumeration" Collapsed="true">
+    <Position X="102" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAIACAAgwAAAAAIAAAAAAgAAAAQAAAACBAA=</HashCode>
+      <FileName>03 Semantics\00 ItemInfo.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

@@ -1,0 +1,9 @@
+(
+	printline("line 1: this program should print 3 lines");
+	if 1 | (printline("this should not be printed => lazy or fail"); 0) then
+		printline("line 2: this is line 2");
+	if 0 & (printline("this should not be printed => lazy and fail"); 1) then 
+		() /* condition is always false */
+	else
+		printline("line 3: this is line 3")
+)

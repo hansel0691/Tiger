@@ -1,0 +1,20 @@
+/* Este programa es válido. La expresión let-in-end anidada es correcta, pues 
+aunque es de tipo Entero, su tipo "real" es int (porque Entero es un alias a 
+int), y el tipo int es "visible" en el contexto en que ella aparece. (El tipo 
+int es "visible" en la sección in-end del let exterior.) */ 
+
+let 
+	var age : int := 22 
+in 
+	let 
+		type Integer = int 
+		type Entero = Integer 
+		var edad : Entero := age 
+	in 
+		3; 
+		printline("call"); 
+		"string"; 
+		nil; 
+		edad 
+	end 
+end

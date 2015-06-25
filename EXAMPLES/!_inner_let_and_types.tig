@@ -1,0 +1,32 @@
+(let
+    type output = { value : string, count : int }
+    var a := output{value = "output\n", count=5}
+in
+    for i:= 0 to a.count do
+        print(a.value);
+	let
+		var a := 10 * 80
+	in
+		printiline(a)
+	end
+end;
+let
+	var b := "hello"
+in
+	let
+		var c : string := nil
+	in
+		let
+			type output = {hello : int}
+			var c := output{hello = 3}
+		in
+			printiline(c.hello)
+		end
+	end;
+	let
+		var b := "rene"
+	in
+		printline(concat("\n", b))
+	end
+end
+)

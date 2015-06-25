@@ -1,0 +1,8 @@
+let
+    type arrayint = array of rectype
+in
+end
+
+/*
+Semantic Error: Undefined type rectype in the array arrayint declaration at line 2.
+*/

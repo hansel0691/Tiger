@@ -1,0 +1,9 @@
+let
+	function f(a:int) = r()
+	function g():int = ()
+	function p():int = "int"
+	function r():oink = ()
+	function h():string = nil
+	function m():int = nil
+in
+end

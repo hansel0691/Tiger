@@ -1,0 +1,11 @@
+let
+	function a(b:int) = 
+		let
+			function c(d:int):int =
+				b
+		in
+			printiline(c(5))
+		end
+in
+	a(3)
+end

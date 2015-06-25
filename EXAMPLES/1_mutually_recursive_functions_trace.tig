@@ -1,0 +1,21 @@
+/*Este programa imprime 9 7 5 3 y 1, así como la traza de por qué método va*/
+let
+
+	function a(a: int):int = (
+		printline("Inside a"); 
+		if a <= 0 then 
+			a 
+		else 
+			b(a-1))
+
+	function b(d: int):int = (
+		printline("Inside b"); 
+		printi(d); 
+		print("\n"); 
+		a(d-1)
+	)
+
+in
+	a(10)
+end
+

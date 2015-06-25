@@ -1,0 +1,30 @@
+/*Este programa imprime los #s del 10 al 0, poniendo por qué método va.
+	Luego imprime 0*/
+
+let 
+	function traceCall(funcName:string, i:int) = (
+		print(concat("Inside ", concat(funcName, " :"))); 
+		printiNL(i)
+	)
+	
+	function a(a:int):int = (
+		traceCall("a", a); 
+		if a<=0 then 
+			a 
+		else 
+			b(a-1)
+	)
+	
+	function printiNL(i:int) = (
+		printi(i); 
+		print("\n")
+	)
+	
+	function b(b:int):int = (
+		traceCall("b", b); 
+		a(b-1)
+	)	
+	
+in  
+	printi(a(10))
+end

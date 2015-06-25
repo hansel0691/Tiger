@@ -1,0 +1,7 @@
+/* Este programa no es válido. Si lo fuera, en la sección in-end no se podría 
+usar ninguna función que permita escribir una cadena a la salida estándar. */ 
+
+let 
+	function print() : int = 0 
+	function printline() : int = 0 
+in /* ... */ end

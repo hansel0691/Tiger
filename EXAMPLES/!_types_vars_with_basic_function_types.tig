@@ -1,0 +1,18 @@
+let
+	type print = int
+	type printiline = {}
+	type ord = printiline
+	var int := 10
+	var string := "hello"
+in
+	let
+		type chr = {name:string}
+		type getline = {test:chr, print:print, getline:int}
+		var int := ""
+		function string(s:string) = printline(s)
+	in
+		string("hello");
+		printline(int)
+	end;
+	print(concat(string, "\n"))
+end

@@ -1,0 +1,46 @@
+﻿<RecentFiles>
+  <RecentFiles>
+    <File id="9FFD216C-363D-486D-A6C8-CCAC7ECF0272/d:02 Nodes/d:01 Language/d:03 FlowControl/f:WhileNode.cs" caret="1797" fromTop="10" />
+    <File id="9FFD216C-363D-486D-A6C8-CCAC7ECF0272/d:02 Nodes/d:01 Language/d:03 FlowControl/f:ForNode.cs" caret="2454" fromTop="21" />
+    <File id="9FFD216C-363D-486D-A6C8-CCAC7ECF0272/d:02 Nodes/d:01 Language/d:02 Declarations/d:01 DeclarationNode/f:FunctionDeclarationNode.cs" caret="503" fromTop="16" />
+    <File id="9FFD216C-363D-486D-A6C8-CCAC7ECF0272/d:02 Nodes/d:01 Language/d:02 Declarations/d:01 DeclarationNode/f:ProcedureDeclarationNode.cs" caret="520" fromTop="15" />
+    <File id="9FFD216C-363D-486D-A6C8-CCAC7ECF0272/d:02 Nodes/d:01 Language/d:01 Program/f:ProgramNode.cs" caret="0" fromTop="0" />
+    <File id="9FFD216C-363D-486D-A6C8-CCAC7ECF0272/d:02 Nodes/d:01 Language/d:06 Operators/d:Arithmetical/d:00 Base/f:ArithmeticNode.cs" caret="3161" fromTop="20" />
+    <File id="9FFD216C-363D-486D-A6C8-CCAC7ECF0272/d:02 Nodes/d:01 Language/d:05 Instructions/d:AccessNodes/f:IdNode.cs" caret="1410" fromTop="20" />
+    <File id="9FFD216C-363D-486D-A6C8-CCAC7ECF0272/d:02 Nodes/d:01 Language/d:02 Declarations/d:01 DeclarationNode/f:ArrayDeclarationNode.cs" caret="1497" fromTop="12" />
+    <File id="9FFD216C-363D-486D-A6C8-CCAC7ECF0272/d:02 Nodes/d:01 Language/d:06 Operators/d:Relational/d:00 Base/f:RelationalNode.cs" caret="0" fromTop="0" />
+    <File id="9FFD216C-363D-486D-A6C8-CCAC7ECF0272/d:02 Nodes/d:01 Language/d:05 Instructions/f:ArgumentListNode.cs" caret="1222" fromTop="22" />
+    <File id="9FFD216C-363D-486D-A6C8-CCAC7ECF0272/d:02 Nodes/d:01 Language/d:02 Declarations/d:01 DeclarationNode/f:RoutineDeclarationNode.cs" caret="4142" fromTop="60" />
+    <File id="9FFD216C-363D-486D-A6C8-CCAC7ECF0272/d:02 Nodes/d:01 Language/d:03 FlowControl/f:IfThenElseNode.cs" caret="2375" fromTop="23" />
+    <File id="9FFD216C-363D-486D-A6C8-CCAC7ECF0272/d:02 Nodes/d:01 Language/d:06 Operators/d:Relational/f:EqualNode.cs" caret="804" fromTop="20" />
+    <File id="9FFD216C-363D-486D-A6C8-CCAC7ECF0272/d:02 Nodes/d:01 Language/d:06 Operators/d:Relational/f:NotEqualNode.cs" caret="852" fromTop="20" />
+    <File id="9FFD216C-363D-486D-A6C8-CCAC7ECF0272/d:02 Nodes/d:01 Language/d:04 Instance/f:InstanceRecordNode.cs" caret="4515" fromTop="69" />
+    <File id="9FFD216C-363D-486D-A6C8-CCAC7ECF0272/f:WrapperLexer.cs" caret="0" fromTop="0" />
+    <File id="9FFD216C-363D-486D-A6C8-CCAC7ECF0272/d:02 Nodes/d:01 Language/d:02 Declarations/d:01 DeclarationNode/f:AliasDeclarationNode.cs" caret="1145" fromTop="24" />
+    <File id="9FFD216C-363D-486D-A6C8-CCAC7ECF0272/d:02 Nodes/d:01 Language/d:02 Declarations/d:01 DeclarationNode/f:VariableDeclarationNode.cs" caret="1465" fromTop="19" />
+    <File id="9FFD216C-363D-486D-A6C8-CCAC7ECF0272/d:02 Nodes/d:01 Language/d:04 Instance/f:InstanceIntNode.cs" caret="1361" fromTop="22" />
+    <File id="9FFD216C-363D-486D-A6C8-CCAC7ECF0272/d:03 Semantics/f:01 Scope.cs" caret="6486" fromTop="21" />
+    <File id="9FFD216C-363D-486D-A6C8-CCAC7ECF0272/d:02 Nodes/d:01 Language/d:04 Instance/f:InstanceTypeArrayNode.cs" caret="2118" fromTop="29" />
+    <File id="9FFD216C-363D-486D-A6C8-CCAC7ECF0272/d:03 Semantics/f:00 ItemInfo.cs" caret="1551" fromTop="12" />
+    <File id="9FFD216C-363D-486D-A6C8-CCAC7ECF0272/d:02 Nodes/d:01 Language/d:02 Declarations/d:00 DeclarationBlocks/d:00 Base/f:DeclarationBlock.cs" caret="1319" fromTop="11" />
+    <File id="9FFD216C-363D-486D-A6C8-CCAC7ECF0272/d:02 Nodes/d:01 Language/d:05 Instructions/f:AssignNode.cs" caret="2953" fromTop="35" />
+    <File id="9FFD216C-363D-486D-A6C8-CCAC7ECF0272/d:02 Nodes/d:01 Language/d:05 Instructions/f:CallRoutineNode.cs" caret="3960" fromTop="23" />
+    <File id="9FFD216C-363D-486D-A6C8-CCAC7ECF0272/d:02 Nodes/d:01 Language/d:04 Instance/f:InstanceStringNode.cs" caret="1162" fromTop="29" />
+    <File id="9FFD216C-363D-486D-A6C8-CCAC7ECF0272/d:02 Nodes/d:01 Language/d:03 FlowControl/f:LetInEndNode.cs" caret="2405" fromTop="13" />
+    <File id="9FFD216C-363D-486D-A6C8-CCAC7ECF0272/d:04 Code Generation/f:00 Symbols.cs" caret="8531" fromTop="28" />
+    <File id="9FFD216C-363D-486D-A6C8-CCAC7ECF0272/f:Program.cs" caret="293" fromTop="2" />
+    <File id="9FFD216C-363D-486D-A6C8-CCAC7ECF0272/d:02 Nodes/d:01 Language/d:05 Instructions/f:ExpressionSequence.cs" caret="1895" fromTop="20" />
+  </RecentFiles>
+  <RecentEdits>
+    <File id="9FFD216C-363D-486D-A6C8-CCAC7ECF0272/d:02 Nodes/d:01 Language/d:05 Instructions/f:CallRoutineNode.cs" caret="2226" fromTop="22" />
+    <File id="9FFD216C-363D-486D-A6C8-CCAC7ECF0272/d:02 Nodes/d:01 Language/d:02 Declarations/d:01 DeclarationNode/f:ArrayDeclarationNode.cs" caret="1483" fromTop="11" />
+    <File id="9FFD216C-363D-486D-A6C8-CCAC7ECF0272/d:02 Nodes/d:01 Language/d:03 FlowControl/f:LetInEndNode.cs" caret="1891" fromTop="13" />
+    <File id="9FFD216C-363D-486D-A6C8-CCAC7ECF0272/d:03 Semantics/f:01 Scope.cs" caret="2390" fromTop="18" />
+    <File id="9FFD216C-363D-486D-A6C8-CCAC7ECF0272/d:02 Nodes/d:01 Language/d:06 Operators/d:Relational/f:EqualNode.cs" caret="901" fromTop="22" />
+    <File id="9FFD216C-363D-486D-A6C8-CCAC7ECF0272/d:02 Nodes/d:01 Language/d:02 Declarations/d:01 DeclarationNode/f:RoutineDeclarationNode.cs" caret="4685" fromTop="23" />
+    <File id="9FFD216C-363D-486D-A6C8-CCAC7ECF0272/d:02 Nodes/d:01 Language/d:06 Operators/d:Relational/f:NotEqualNode.cs" caret="1057" fromTop="24" />
+    <File id="9FFD216C-363D-486D-A6C8-CCAC7ECF0272/d:03 Semantics/f:00 ItemInfo.cs" caret="1551" fromTop="12" />
+    <File id="9FFD216C-363D-486D-A6C8-CCAC7ECF0272/d:04 Code Generation/f:00 Symbols.cs" caret="8613" fromTop="30" />
+    <File id="9FFD216C-363D-486D-A6C8-CCAC7ECF0272/f:Program.cs" caret="3855" fromTop="26" />
+  </RecentEdits>
+</RecentFiles>

@@ -1,0 +1,5 @@
+while 10 > 5 do (i+1; ())
+
+/*
+Semantic Error: Undefined variable i at line 1.
+*/

@@ -1,0 +1,14 @@
+for i := 1 to 5 do
+	let
+		function foo() =
+			let
+				function Write(msg : int) = (printiline(msg))
+			in
+				Write(1);
+				break
+			end
+		
+		var x := i
+	in
+		foo()
+	end

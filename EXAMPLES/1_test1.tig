@@ -1,0 +1,20 @@
+﻿let
+
+	function f():string =  
+	let
+		var s := substring("pepe",0,2)
+	in
+		printline(s);
+		s
+	end
+	
+	function f():string =  
+	let
+		var s := substring("pepe",0,2)
+	in
+		printline(s);
+		nil
+	end
+in
+	printiline(nil = f() );
+end

@@ -1,0 +1,7 @@
+let
+	type T = Q
+	type AT = array of T
+	var x : AT := nil
+in
+	x = AT[10] of 0
+end 

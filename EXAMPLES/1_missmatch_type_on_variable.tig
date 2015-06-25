@@ -1,0 +1,6 @@
+/*Error: VarDeclaration con tipo de Value != tipo declarado*/
+let 
+	var a:int := " "
+in
+	a
+end

@@ -1,0 +1,9 @@
+let
+    var hello := "Hello World!"
+in
+	print(Hello)
+end
+
+/*
+Syntactic Error: Undefined variable Hello.
+*/

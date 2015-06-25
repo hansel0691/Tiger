@@ -1,0 +1,5 @@
+if "abc" then 0 else 1
+
+/*
+Semantic Error: The condition of the if-then-else statement at line 1 does not return an integer value.
+*/

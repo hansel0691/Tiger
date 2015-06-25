@@ -1,0 +1,6 @@
+let
+	function print(pepe:int) : int = 0
+	function printline(x:string,y:string) : int = 0
+in
+	/* ... */
+end

@@ -1,0 +1,10 @@
+let
+    type g = h
+    type h = non_defined
+in
+    2
+end
+
+/*
+Semantic Error: Undefined alias_type non_defined in the alias g declaration at line 2.
+*/

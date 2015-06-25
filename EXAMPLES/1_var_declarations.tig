@@ -1,0 +1,10 @@
+/*Error: VarDeclaration que ya estaba en el scope*/
+
+let
+    var a := 1
+	var a := 2
+	type entero = int
+	var a := "as"
+	var b := "pepe"
+in
+end

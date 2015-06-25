@@ -1,0 +1,14 @@
+﻿let
+	type a = b
+	type b = c
+	type c = d
+	type d = b
+	type f = {p1 : a, p2 : b , p3 : c , p4: d, p5 : f}
+	var x:f := f{p1 = nil,p2 = nil,p3=nil,p4=nil,p5 =nil}
+in
+	printline(x.p1);
+	printline(x.p2);
+	printline(x.p3);
+	printline(x.p4);
+	printline(x.p5)
+end

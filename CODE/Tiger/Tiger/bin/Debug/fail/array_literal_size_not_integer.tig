@@ -1,0 +1,11 @@
+﻿let
+	var tam := "10"
+	type t = array of int
+	var x := t[ tam ] of 0
+in
+()
+end
+
+/*
+Semantic Error: Invalid array creation at line 4. Size expression must be of type int.
+*/

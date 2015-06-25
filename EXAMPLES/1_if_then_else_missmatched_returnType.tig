@@ -1,0 +1,3 @@
+/*Error: IfThenElse con tipo de Then != tipo de Else*/
+
+if (5>4) then 13 else  " "

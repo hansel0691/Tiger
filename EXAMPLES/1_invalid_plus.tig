@@ -1,0 +1,3 @@
+/*Error: Plus con parámetros de tipo != int*/
+
+3 + "var"

@@ -1,0 +1,5 @@
+let
+	var info : string := "Tigers are solitary, nocturnal hunters."
+in 
+	print(info) + break
+end

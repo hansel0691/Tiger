@@ -1,0 +1,6 @@
+let
+	var i := 5
+in
+	for i := i - 5 to i do
+		printiline(i)
+end

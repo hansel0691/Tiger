@@ -1,0 +1,17 @@
+(
+print("Testing 10 <= 10: ");
+printiline(10 <= 10);
+print("Testing \"\
+\10\" <> \"10\": ");
+printiline("10" <> "10");
+print("Testing (10 + 40) * --32: ");
+printiline((10 + 40) * --32);
+print("Testing 1 = 0 & 1: ");
+printiline(1 = 0 & 1 );
+print("Testing 1 = 0 & 1 | 1: ");
+printiline(1 = 0 & 1 | 1);
+print("Testing (23 <= 10) > 11: ");
+printiline((23 <= 10) > 11);
+print("Testing 23 < (10 >= 11): ");
+printiline(23 < (10 >= 11))
+)

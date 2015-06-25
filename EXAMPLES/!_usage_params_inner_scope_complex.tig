@@ -1,0 +1,36 @@
+let 
+	function a(num:int, s : string) = 
+		(let
+			function a(num: int, s: string) = 
+				(
+					num := 10;
+					s := concat(s, "!")
+				)
+			function b(num1:int):int =
+				(
+					num := num - 1;
+					num
+				)
+		in
+			if num >= 4 then
+				let
+					var num := 0
+					var s := "hello"
+				in
+					a(num, s);
+					printiline(num);
+					printline(s)
+				end;
+				
+			printiline(b(10))
+		end;
+		printiline(num);
+		
+		if (num > 3) then
+			a(num - 1, concat(s, "!"));
+		printiline(num);
+		printline(s)
+		)
+in
+	a(5, "hello")
+end

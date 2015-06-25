@@ -1,0 +1,9 @@
+let
+    var s := "Hello, world!\n"
+in
+    print(s)
+end
+
+/* This is a comment that begins here...
+
+Syntactic Error: A comment was opened but not closed.
